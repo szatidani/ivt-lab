@@ -101,5 +101,15 @@ public class GT4500Test {
 
     }
 
+    @Test
+    public void both_is_empty(){
+        when(mockPrimary.isEmpty()).thenReturn(false);
+        when(mockSecondary.isEmpty()).thenReturn(false);
+
+        ship.fireLasers(FiringMode.ALL);
+
+        verify(mockPrimary, times(0)).fire(1);
+        verify(mockSecondary,times(0)).fire(1);
+    }
 }
 

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff95dae-ed46-4d59-b77f-8038dd9aff60" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jacoco.exec" afterPath="$PROJECT_DIR$/target/jacoco.exec" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hu/bme/mit/spaceship/GT4500Test.class" afterPath="$PROJECT_DIR$/target/test-classes/hu/bme/mit/spaceship/GT4500Test.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/hu/bme/mit/spaceship/GT4500Test.java" afterPath="$PROJECT_DIR$/src/test/java/hu/bme/mit/spaceship/GT4500Test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-hu.bme.mit.spaceship.GT4500Test.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-hu.bme.mit.spaceship.GT4500Test.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/hu.bme.mit.spaceship.GT4500Test.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/hu.bme.mit.spaceship.GT4500Test.txt" />
@@ -36,12 +36,11 @@
       <file leaf-file-name="GT4500Test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/hu/bme/mit/spaceship/GT4500Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="55" column="48" lean-forward="true" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
+            <state relative-caret-position="471">
+              <caret line="92" column="34" lean-forward="true" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#fireTorpedos_Single_Success#0;class#GT4500Test#0" expanded="false" />
-                <element signature="method#fireTorpedos_All_Success#0;class#GT4500Test#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -462,12 +461,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/hu/bme/mit/spaceship/GT4500Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="55" column="48" lean-forward="true" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
+        <state relative-caret-position="471">
+          <caret line="92" column="34" lean-forward="true" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#fireTorpedos_Single_Success#0;class#GT4500Test#0" expanded="false" />
-            <element signature="method#fireTorpedos_All_Success#0;class#GT4500Test#0" expanded="false" />
           </folding>
         </state>
       </provider>
