@@ -37,7 +37,8 @@ public class GT4500Test {
   public void fireTorpedos_All_Success(){
     // Arrange
     when(mockPrimary.fire(1) && mockSecondary.fire(1)).thenReturn(true);
-
+      when(mockPrimary.isEmpty()).thenReturn(false);
+      when(mockSecondary.isEmpty()).thenReturn(false);
     // Act
     //boolean result = ship.fireTorpedos(FiringMode.ALL);
     ship.fireTorpedos(FiringMode.ALL);
@@ -48,4 +49,57 @@ public class GT4500Test {
     verify(mockSecondary,times(1)).fire(1);
   }
 
+  @Test
+    public void fireTorpedos_Primary_first_then_secondary(){
+      when(mockPrimary.fire(1)).thenReturn(true);
+      when(mockSecondary.fire(1)).thenReturn(true);
+      when(mockSecondary.isEmpty()).thenReturn(false);
+      when(mockPrimary.isEmpty()).thenReturn(false);
+
+      ship.fireTorpedos(FiringMode.SINGLE);
+      ship.fireTorpedos(FiringMode.SINGLE);
+
+      verify(mockPrimary,times(1)).fire(1);
+      verify(mockSecondary,times(1)).fire(1);
+  }
+
+    @Test
+    public void fireTorpedos_Primary_first_then_Primary_again(){
+        when(mockPrimary.fire(1)).thenReturn(true);
+        when(mockSecondary.isEmpty()).thenReturn(true);
+        when(mockPrimary.isEmpty()).thenReturn(false);
+
+        ship.fireTorpedos(FiringMode.SINGLE);
+        ship.fireTorpedos(FiringMode.SINGLE);
+
+        verify(mockPrimary,times(2)).fire(1);
+        verify(mockSecondary,times(0)).fire(1);
+    }
+
+    @Test
+    public void fireTorpedos_Primary_isEmpty_Secondary_twice(){
+        when(mockSecondary.fire(1)).thenReturn(true);
+        when(mockPrimary.isEmpty()).thenReturn(true);
+        when(mockSecondary.isEmpty()).thenReturn(false);
+
+        ship.fireTorpedos(FiringMode.SINGLE);
+        ship.fireTorpedos(FiringMode.SINGLE);
+
+        verify(mockPrimary,times(0)).fire(1);
+        verify(mockSecondary,times(2)).fire(1);
+    }
+
+    @Test
+    public void fireLasers_Fail(){
+        when(mockPrimary.isEmpty()).thenReturn(true);
+        when(mockSecondary.isEmpty()).thenReturn(true);
+
+        ship.fireLasers(FiringMode.SINGLE);
+
+        verify(mockPrimary, times(0)).fire(1);
+        verify(mockSecondary,times(0)).fire(1);
+
+    }
+
 }
+

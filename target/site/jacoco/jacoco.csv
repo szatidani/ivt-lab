@@ -1,0 +1,5 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+hu.bme.mit.spaceship,hu.bme.mit.spaceship,TorpedoStore,59,0,8,0,16,0,8,0,4,0
+hu.bme.mit.spaceship,hu.bme.mit.spaceship,GT4500.new Object() {...},2,17,0,0,0,1,0,1,0,1
+hu.bme.mit.spaceship,hu.bme.mit.spaceship,GT4500,2,98,7,14,0,24,7,7,0,3
+hu.bme.mit.spaceship,hu.bme.mit.spaceship,FiringMode,5,33,0,0,0,2,1,3,1,3
